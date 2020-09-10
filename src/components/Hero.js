@@ -45,9 +45,6 @@ const Wrapper = styled.section`
     // border: 2px solid red;
     margin: 0 0 20px 0;
     max-width: 900px;
-    //   @media (max-width: 768px) {
-    //     flex-direction: column;
-    //   }
   }
   h3 {
     color: var(--white);
@@ -56,6 +53,11 @@ const Wrapper = styled.section`
       font-size: 20px;
       max-width: 700px;
   }
+
+
+  //   @media (max-width: 768px) {
+    //     flex-direction: column;
+    //   }
 `;
 
 export default Hero;

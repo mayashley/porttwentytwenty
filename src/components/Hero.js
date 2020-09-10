@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="heroWrapper">
             <div className="secondaryWrapper">
       <h1>
-        Hi, I'm Ashley, <strong>Web Designer</strong> and{" "}
+        Hi, I'm Ashley, <strong>Web Designer</strong> and
         <strong>Front-End Developer</strong>.
       </h1>
       <h3>

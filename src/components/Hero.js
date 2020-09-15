@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from '../components/Navbar';
 
 const Hero = () => {
   return (
     <Wrapper>
+     
       <div className="heroWrapper">
-      <Navbar/>
         <div className="secondaryWrapper">
           <h1>
             Hi, I'm Ashley, <strong>Web Designer</strong> and
@@ -33,19 +32,23 @@ const Hero = () => {
 
 const Wrapper = styled.section`
   .heroWrapper {
-    border: 1px solid blue;
+    // border: 1px solid blue;
     background-color: var(--almostBlack);
     width: 100%;
-    height: 100%;
-    max-height: 1024px;
-    min-height: 640px;
+    height: -o-calc(100vh - 60px); /* opera */
+height: -webkit-calc(100vh - 60px); /* google, safari */
+height: -moz-calc(100vh - 60px); /* firefox */ 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .secondaryWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 0 0 50px;
+    // border: 1px solid pink;
+    
   }
   h1 {
     color: var(--white);
@@ -74,9 +77,28 @@ const Wrapper = styled.section`
 
   }
 
-  //   @media (max-width: 768px) {
-  //     flex-direction: column;
-  //   }
+    @media (max-width: 768px) {
+     
+      .secondaryWrapper {
+        margin: 20px;
+        // border: 1px solid pink;
+        
+      }
+      h1 {
+        font-size: 40px;
+        // border: 2px solid red;
+        max-width: 600px;
+      
+      }
+      h3 {
+        font-size: 16px;
+        max-width: 600px;
+      }
+      button{
+        width:110px;
+        height: 30px;
+      }
+    }
 `;
 
 export default Hero;

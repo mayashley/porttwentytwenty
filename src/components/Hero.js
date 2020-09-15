@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="secondaryWrapper">
           <h1>
             Hi, I'm Ashley, <strong>Web Designer</strong> and
-            <strong>Front-End Developer</strong>.
+            <strong> Front-End Developer</strong>.
           </h1>
           <h3>
             I design and build beautiful websites for businesses. If you need a modern and powerful website, send me an
@@ -16,6 +16,7 @@ const Hero = () => {
             estimate.
           </h3>
           <button
+          alt="see my work"
             type="button"
             onClick={(e) => {
               e.preventDefault();

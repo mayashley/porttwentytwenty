@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Navbar from '../components/Navbar';
 
 const Hero = () => {
   return (
     <Wrapper>
       <div className="heroWrapper">
+      <Navbar/>
         <div className="secondaryWrapper">
           <h1>
             Hi, I'm Ashley, <strong>Web Designer</strong> and

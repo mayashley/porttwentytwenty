@@ -17,9 +17,6 @@ class Projects extends Component {
             image2={item.image2}
           />
         )}
-        {/* <SubTitle msg="lastest work" />
-        <Title msg="roam hr" />
-        <Paragraph msg="Full website design for a concept team collaboration platform. This website design includes a beautiful blog and crisp clean designs for a modern look and feel." /> */}
       </div>
     );
   }

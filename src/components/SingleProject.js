@@ -1,5 +1,4 @@
 import React from "react";
-import { FaFileExcel } from "react-icons/fa";
 import styled from "styled-components";
 
 const SingleProject = ({ title, subtitle, paragraph, imageLeft, image1, image2 }) => {

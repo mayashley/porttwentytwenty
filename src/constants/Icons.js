@@ -7,28 +7,40 @@ import {
   SiGatsby,
   SiJavascript,
   SiAdobephotoshop,
+  SiStyledComponents
 } from "react-icons/si";
 
 export default [
   {
     icon: <SiFigma />,
+    title:"FIGMA",
   },
   {
     icon: <SiHtml5 />,
+    title:"HTML5",
   },
   {
     icon: <SiCss3 />,
+    title:"CSS3",
   },
   {
     icon: <SiReact />,
+    title:"REACT",
   },
   {
     icon: <SiGatsby />,
+    title:"GATSBY",
   },
   {
     icon: <SiJavascript />,
+    title:"JAVASCRIPT",
   },
   {
     icon: <SiAdobephotoshop />,
+    title:"PHOTOSHOP",
+  },
+  {
+    icon: <SiStyledComponents />,
+    title:"Styled-Components",
   },
 ];

@@ -9,6 +9,14 @@ const SingleProject = ({ title, subtitle, paragraph, imageLeft, image1, image2 }
         <h5>{subtitle}</h5>
         <h2>{title}</h2>
         <p>{paragraph}</p>
+        <button
+          alt="see my work"
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "/";
+              // need to add the location for the link
+            }}> view this project</button>
       </LeftContainer>
       <RightContainer>
         <img alt="desktop design" className="desktopImg" src={image1} />
@@ -62,6 +70,17 @@ align-items:center;
       width: 60%;
       text-align:center;
     }
+    button{
+      width:110px;
+      height: 30px;
+        margin: 20px 0;
+        color: var(--almostBlack);
+        background-image: linear-gradient(to right, rgba(143, 215, 87, 1), rgba(58, 128, 4, 1));
+        border-radius:4px;
+        border: none;
+    
+      }
+    }
   }
 
   @media screen and (min-width: 600px) {
@@ -109,6 +128,10 @@ align-items:center;
       p{
         font-size: 22px; 
         text-align:left;
+      }
+      button{
+        width:110px;
+        height: 30px;
       }
     }
       }

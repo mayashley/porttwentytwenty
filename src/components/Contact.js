@@ -6,7 +6,7 @@ const Contact = () => {
       <Wrapper>
       <section>
         <h2>Let's Talk</h2>
-        <div>
+        <div id="contact">
           <form 
            action="https://formspree.io/mvorwnwo"
            method="POST">

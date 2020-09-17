@@ -25,6 +25,7 @@ const Wrapper = styled.nav`
 h3 {
     color: var(--white);
     font-weight: 300;
+    margin: 0 0 0 30px;
   }
   h3 span {
     color: var(--lightGreen);
@@ -38,16 +39,17 @@ h3 {
     display flex;
     justify-content: center;
     background-color: var(--grey);
+    padding: 20px 0;
   }
   .wrap{
     display:flex;
     border: 1px solid blue;
-    width: 90%;
+    width: 95%;
     align-items:center;
   }
   .iconWrapper{
     display:flex;
-    width: 10%;
+    width: 2%;
     border: 1px solid green;
     align-items: center;
   }

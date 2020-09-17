@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaAlignRight } from "react-icons/fa";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Links from "../constants/Links";
+// import Links from "../constants/Links";
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false);
@@ -20,20 +20,17 @@ const Navbar = () => {
         </div>
 
         <div className={!isOpen && "hideNav"}>
-          {Links.map((item, index) => {
-            return (
-              <Link key={index} className="navLinks" to={item.path}>
-                {item.text}
-              </Link>
-            );
-          })}
+          <div className="navLinks">
+          <a href="#projects">my work</a>
+          <a href="#contact">contact me</a>
+          </div>
         </div>
       </nav>
     </Wrapper>
   );
 };
 const Wrapper = styled.nav`
-.navBar{
+.navBar {
     display: flex;
     flex-direction: column;
     // border: 1px solid red;
@@ -78,7 +75,7 @@ const Wrapper = styled.nav`
   .hideNav {
     display: none;
   }
-  .navLinks  {
+  .navLinks a {
     display: flex;
     justify-content: center;
     margin: 20px 0;
@@ -88,8 +85,9 @@ const Wrapper = styled.nav`
     align-items: center;
     font-weight: 100;
     overflow: hidden;
+    border: 1px solid red;
   }
-  .navLinks:hover {
+  .navLinks a:hover {
     color: var(--lightGreen);
   }
 
@@ -101,16 +99,17 @@ const Wrapper = styled.nav`
         display: none;
       }
 
-      .navBar{
+      .navBar {
           flex-direction: row;
           justify-content: space-between;
           align-items:center;
       }
-      .hideNav{
+      .hideNav {
           display:flex;
       }
       .navLinks  {
         justify-content: flex-end;
+        display: flex;
       }
      
 `;

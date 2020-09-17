@@ -5,7 +5,7 @@ import ProjectsList from "../constants/ProjectsList";
 class Projects extends Component {
   render() {
     return (
-      <div>
+      <div id="projects">
         {ProjectsList.map((item, index) => 
           <SingleProject
             key={index}

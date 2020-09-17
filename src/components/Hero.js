@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Slide } from 'react-awesome-reveal';
 
 const Hero = () => {
   return (
@@ -7,6 +8,7 @@ const Hero = () => {
      
       <div className="heroWrapper">
         <div className="secondaryWrapper">
+          <Slide triggerOnce>
           <h1>
             Hi, I'm Ashley, <strong>Web Designer</strong> and
             <strong> Front-End Developer</strong>.
@@ -24,6 +26,7 @@ const Hero = () => {
               window.location.href = "/";
               // need to add the location for the link
             }}> see my work</button>
+            </Slide>
         </div>
       </div>
     </Wrapper>

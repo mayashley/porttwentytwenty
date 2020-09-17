@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { Slide } from "react-awesome-reveal";
 
 const SingleProject = ({ title, subtitle, paragraph, imageLeft, image1, image2 }) => {
   return (
-    
+    <Slide triggerOnce>
     <Container normal={imageLeft}>
       <LeftContainer>
         <h5>{subtitle}</h5>
@@ -18,11 +19,13 @@ const SingleProject = ({ title, subtitle, paragraph, imageLeft, image1, image2 }
               // need to add the location for the link
             }}> view this project</button>
       </LeftContainer>
+     
       <RightContainer>
         <img alt="desktop design" className="desktopImg" src={image1} />
         <img alt="mobile design" className="mobileImg"  src={image2} />
       </RightContainer>
     </Container>
+    </Slide>
     
   );
 };

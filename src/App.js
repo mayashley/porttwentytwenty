@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Technologies from "./components/Technologies";
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 import './App.css';
@@ -18,6 +19,7 @@ function App() {
      <Projects/>
      <Technologies/>
      <Contact/>
+     <Footer/>
     </div>
     </Router>
   );

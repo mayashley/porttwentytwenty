@@ -85,7 +85,7 @@ const Wrapper = styled.nav`
     align-items: center;
     font-weight: 100;
     overflow: hidden;
-    border: 1px solid red;
+    // border: 1px solid red;
   }
   .navLinks a:hover {
     color: var(--lightGreen);
@@ -110,6 +110,10 @@ const Wrapper = styled.nav`
       .navLinks  {
         justify-content: flex-end;
         display: flex;
+        font-size: 18px;
+      }
+      h3{
+        font-size: 26px;
       }
      
 `;

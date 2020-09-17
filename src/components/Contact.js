@@ -114,7 +114,7 @@ section{
     background-image: linear-gradient(to right, rgba(143, 215, 87, 1), rgba(58, 128, 4, 1));
     border-radius:4px;
     border: none;
-    margin: 50px 0;
+    margin: 10px 0;
 }
 @media (min-width: 768px){
   .button {

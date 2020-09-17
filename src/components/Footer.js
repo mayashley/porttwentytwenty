@@ -10,6 +10,7 @@ const Footer = () => {
           <h3>
             ashley<span>May</span>
           </h3>
+          <p>©2020 All Rights Reserved.</p>
           </div>
         {SocialIcons.map((item, index) => {
           return <div key={index} className='iconWrapper'>
@@ -25,7 +26,6 @@ const Wrapper = styled.nav`
 h3 {
     color: var(--white);
     font-weight: 300;
-    margin: 0 0 0 30px;
   }
   h3 span {
     color: var(--lightGreen);
@@ -34,24 +34,47 @@ h3 {
   .h4{
       color: var(--almostBlack);
   }
+  p{
+    color: var(--white);
+    font-weight:100;
+    font-family: roboto;
+    font-size: 10px;
+  }
   .secondaryWrapper{
-    border: 1px solid red;
+    // border: 1px solid red;
     display flex;
     justify-content: center;
-    background-color: var(--grey);
+    background-color: var(--almostBlack);
     padding: 20px 0;
   }
   .wrap{
     display:flex;
-    border: 1px solid blue;
-    width: 95%;
-    align-items:center;
+    flex-direction: column;
+    // border: 1px solid blue;
+    width: 94%;
+    // align-items:center;
+    margin: 0 0 0 30px;
   }
   .iconWrapper{
     display:flex;
-    width: 2%;
-    border: 1px solid green;
+    width: 6%;
+    // border: 1px solid green;
     align-items: center;
+    font-size: 18px;
+    color: var(--white);
+  }
+
+  @media (min-width: 768px){
+    .wrap{
+      width:96%;
+    }
+    .iconWrapper{
+      font-size: 18px;
+      width:4%;
+    }
+    h3 {
+      font-size: 26px;
+    }
   }
 `
 

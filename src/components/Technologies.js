@@ -1,9 +1,11 @@
 import React from "react";
 import Icons from "../constants/Icons";
 import styled from "styled-components";
+import { Slide } from "react-awesome-reveal";
 
 const Technologies = () => {
   return (
+    <Slide>
     <Wrapper>
     <div className='wrapperSecondary'>
       {Icons.map((item, index) => {
@@ -14,6 +16,7 @@ const Technologies = () => {
       })}
     </div>
     </Wrapper>
+    </Slide>
   );
 };
 export default Technologies;

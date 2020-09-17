@@ -81,7 +81,6 @@ align-items:center;
         background-image: linear-gradient(to right, rgba(143, 215, 87, 1), rgba(58, 128, 4, 1));
         border-radius:4px;
         border: none;
-    
       }
     }
   }

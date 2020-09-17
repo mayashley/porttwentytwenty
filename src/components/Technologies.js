@@ -5,7 +5,7 @@ import { Slide } from "react-awesome-reveal";
 
 const Technologies = () => {
   return (
-    <Slide>
+    <Slide triggerOnce>
     <Wrapper>
     <div className='wrapperSecondary'>
       {Icons.map((item, index) => {

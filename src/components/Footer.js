@@ -5,8 +5,8 @@ import SocialIcons from '../constants/SocialIcons';
 const Footer = () => {
     return (
         <Wrapper>
-      <div>
-          <div>
+      <div className="secondaryWrapper">
+          <div className="wrap">
           <h3>
             ashley<span>May</span>
           </h3>
@@ -32,6 +32,24 @@ h3 {
   }
   .h4{
       color: var(--almostBlack);
+  }
+  .secondaryWrapper{
+    border: 1px solid red;
+    display flex;
+    justify-content: center;
+    background-color: var(--grey);
+  }
+  .wrap{
+    display:flex;
+    border: 1px solid blue;
+    width: 90%;
+    align-items:center;
+  }
+  .iconWrapper{
+    display:flex;
+    width: 10%;
+    border: 1px solid green;
+    align-items: center;
   }
 `
 

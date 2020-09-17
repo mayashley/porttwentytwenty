@@ -26,8 +26,8 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content:center;
   margin: 0;
-  background-color: var(--almostBlack);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--almostBlack);
 }
 .iconWrapper{
   margin: 20px 10px;

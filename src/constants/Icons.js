@@ -16,6 +16,10 @@ export default [
     title:"FIGMA",
   },
   {
+    icon: <SiAdobephotoshop />,
+    title:"PHOTOSHOP",
+  },
+  {
     icon: <SiHtml5 />,
     title:"HTML5",
   },
@@ -24,20 +28,16 @@ export default [
     title:"CSS3",
   },
   {
+    icon: <SiJavascript />,
+    title:"JAVASCRIPT",
+  },
+  {
     icon: <SiReact />,
     title:"REACT",
   },
   {
     icon: <SiGatsby />,
     title:"GATSBY",
-  },
-  {
-    icon: <SiJavascript />,
-    title:"JAVASCRIPT",
-  },
-  {
-    icon: <SiAdobephotoshop />,
-    title:"PHOTOSHOP",
   },
   {
     icon: <SiStyledComponents />,

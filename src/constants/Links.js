@@ -1,7 +1,7 @@
 export default[
     {
         path:'/work',
-        text:'my work'
+        text:'my work',
     },
     {
         path:'/connect',

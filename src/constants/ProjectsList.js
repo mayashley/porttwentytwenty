@@ -10,6 +10,7 @@ const iphone4 = require("../assets/iphone4.png");
 
 export default [
     {
+        pathName: "roamhr",
         title: "Roam HR",
         subtitle: "latest work",
         paragraph: "Responsive design completed for a Fin Tech start up located in Columbus,OH.",
@@ -18,6 +19,7 @@ export default [
         image2: iphone1,
     },
     {
+        pathName: "alpineconsulting",
         title: "Alpine Consulting",
         subtitle: "latest work",
         paragraph: "Design created for a web design and development consulting company in Columb,OH. ",
@@ -27,6 +29,7 @@ export default [
 
     },
     {
+        pathName: "chatme",
         title: "Chat ME",
         subtitle: "latest work",
         paragraph: "Concept design for a chat app.",
@@ -35,6 +38,7 @@ export default [
         image2:iphone2,
     },
     {
+        pathName: "winstonhall",
         title: "Winston Hall",
         subtitle: "latest work",
         paragraph: "Portfolio designed for a web developer in Westunion,OH.",

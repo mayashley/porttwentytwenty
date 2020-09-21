@@ -14,12 +14,12 @@ const Navbar = () => {
           <h3>
             ashley<span>May</span>
           </h3>
-          <Link className="logoBtn" onClick={() => setNav(!isOpen)}>
+          <button className="logoBtn" onClick={() => setNav(!isOpen)}>
             <FaAlignRight className="logoIcon" />
-          </Link>
+          </button>
         </div>
 
-        <div className={!isOpen && "hideNav"}>
+        <div className={!isOpen ? "hideNav" : null}>
           <div className="navLinks">
           <a href="#projects">my work</a>
           <a href="#contact">contact me</a>

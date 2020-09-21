@@ -9,6 +9,7 @@ class Projects extends Component {
         {ProjectsList.map((item, index) => 
           <SingleProject
             key={index}
+            pathName={item.pathName}
             title={item.title}
             subtitle={item.subtitle}
             paragraph={item.paragraph}

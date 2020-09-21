@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
+import {Link} from 'react-router-dom';
 
-const SingleProject = ({ title, subtitle, paragraph, imageLeft, image1, image2 }) => {
+const SingleProject = ({ pathName, title, subtitle, paragraph, imageLeft, image1, image2 }) => {
   return (
     <Slide triggerOnce>
     <Container normal={imageLeft}>
@@ -10,6 +11,7 @@ const SingleProject = ({ title, subtitle, paragraph, imageLeft, image1, image2 }
         <h5>{subtitle}</h5>
         <h2>{title}</h2>
         <p>{paragraph}</p>
+        <Link to={`/project/${pathName}`}>View this project</Link>
         <button
           alt="see my work"
             type="button"

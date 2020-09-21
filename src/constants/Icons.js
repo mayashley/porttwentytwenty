@@ -4,7 +4,7 @@ import {
   SiHtml5,
   SiCss3,
   SiReact,
-  SiGatsby,
+  SiGraphql,
   SiJavascript,
   SiAdobephotoshop,
   SiStyledComponents
@@ -36,8 +36,8 @@ export default [
     title:"REACT",
   },
   {
-    icon: <SiGatsby />,
-    title:"GATSBY",
+    icon: <SiGraphql />,
+    title:"GraphQl",
   },
   {
     icon: <SiStyledComponents />,

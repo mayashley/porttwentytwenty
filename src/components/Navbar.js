@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className={!isOpen ? "hideNav" : null}>
           <div className="navLinks">
           <a href="#projects">my work</a>
-          <a href="#contact">contact me</a>
+          <a href="#contact">lets talk</a>
           </div>
         </div>
       </nav>

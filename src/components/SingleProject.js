@@ -11,15 +11,7 @@ const SingleProject = ({ pathName, title, subtitle, paragraph, imageLeft, image1
         <h5>{subtitle}</h5>
         <h2>{title}</h2>
         <p>{paragraph}</p>
-        <Link to={`/project/${pathName}`}>View this project</Link>
-        <button
-          alt="see my work"
-            type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href = "/";
-              // need to add the location for the link
-            }}> view this project</button>
+        <Link className="Link" to={`/project/${pathName}`}>view this project</Link>
       </LeftContainer>
      
       <RightContainer>
@@ -75,14 +67,20 @@ align-items:center;
       width: 60%;
       text-align:center;
     }
-    button{
+    .Link{
       width:110px;
       height: 30px;
+      font-size: 12px;
+      text-decoration: none;
         margin: 20px 0;
         color: var(--almostBlack);
         background-image: linear-gradient(to right, rgba(143, 215, 87, 1), rgba(58, 128, 4, 1));
         border-radius:4px;
         border: none;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-weight: 400;
       }
     }
   }
@@ -133,9 +131,11 @@ align-items:center;
         font-size: 22px; 
         text-align:left;
       }
-      button{
+      .Link{
         width:110px;
         height: 30px;
+         font-size: 12px;
+      text-decoration: none;
       }
     }
       }

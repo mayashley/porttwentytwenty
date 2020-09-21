@@ -18,14 +18,9 @@ const Hero = () => {
             email. If we are a good fit, I will give you a time and cost
             estimate.
           </h3>
-          <button
-          alt="see my work"
-            type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href = "/";
-              // need to add the location for the link
-            }}> see my work</button>
+          <div className="navLinks">
+          <a href="#projects">see my work</a>
+          </div>
             </Slide>
         </div>
       </div>
@@ -69,7 +64,7 @@ height: -moz-calc(100vh - 60px); /* firefox */
     font-size: 20px;
     max-width: 700px;
   }
-  button{
+  a{
     width:120px;
     height: 34px;
     margin: 20px 0;
@@ -77,8 +72,14 @@ height: -moz-calc(100vh - 60px); /* firefox */
     background-image: linear-gradient(to right, rgba(143, 215, 87, 1), rgba(58, 128, 4, 1));
     border-radius:4px;
     border: none;
-
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-weight: 400;
+    padding: 0 0 5px;
   }
+
 
     @media (max-width: 768px) {
      
@@ -97,7 +98,7 @@ height: -moz-calc(100vh - 60px); /* firefox */
         font-size: 16px;
         max-width: 600px;
       }
-      button{
+     a{
         width:110px;
         height: 30px;
       }

@@ -1,26 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
-import SocialIcons from '../constants/SocialIcons';
+import React from "react";
+import styled from "styled-components";
+import SocialIcons from "../constants/SocialIcons";
 
 const Footer = () => {
-    return (
-        <Wrapper>
+  return (
+    <Wrapper>
       <div className="secondaryWrapper">
-          <div className="wrap">
+        <div className="wrap">
           <h3>
             ashley<span>May</span>
           </h3>
           <p>©2020 All Rights Reserved.</p>
-          </div>
-        {SocialIcons.map((item, index) => {
-          return <div key={index} className='iconWrapper'>
-              <h4>{item.icon}</h4>
-          </div>;
-        })}
+        </div>
       </div>
-      </Wrapper>
-    );
-  };
+    </Wrapper>
+  );
+};
 
 const Wrapper = styled.nav`
 h3 {
@@ -31,9 +26,7 @@ h3 {
     color: var(--lightGreen);
     font-weight: 100;
   }
-  .h4{
-      color: var(--almostBlack);
-  }
+  
   p{
     color: var(--white);
     font-weight:100;
@@ -55,14 +48,7 @@ h3 {
     // align-items:center;
     margin: 0 0 0 30px;
   }
-  .iconWrapper{
-    display:flex;
-    width: 6%;
-    // border: 1px solid green;
-    align-items: center;
-    font-size: 18px;
-    color: var(--white);
-  }
+ 
 
   @media (min-width: 768px){
     .wrap{
@@ -76,7 +62,6 @@ h3 {
       font-size: 26px;
     }
   }
-`
+`;
 
-  export default Footer;
-
+export default Footer;

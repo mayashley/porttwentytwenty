@@ -33,9 +33,9 @@ const Wrapper = styled.section`
     // border: 1px solid blue;
     background-color: var(--almostBlack);
     width: 100%;
-    height: -o-calc(100vh - 60px); /* opera */
-height: -webkit-calc(100vh - 60px); /* google, safari */
-height: -moz-calc(100vh - 60px); /* firefox */ 
+    height: -o-calc(100vh - 50px); /* opera */
+height: -webkit-calc(100vh - 50px); /* google, safari */
+height: -moz-calc(100vh - 50px); /* firefox */ 
     display: flex;
     flex-direction: column;
     justify-content: center;

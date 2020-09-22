@@ -16,11 +16,7 @@ function App() {
       <div className="App">
         <Navbar />
 
-        <Switch>
-          <Route path="/project/:pathName">
-            <ProjectScreen />
-          </Route>
-          
+        <Switch>    
           <Route path="/">
             <Hero />
             <Projects />

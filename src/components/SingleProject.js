@@ -1,38 +1,47 @@
 import React from "react";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
-import {Link} from 'react-router-dom';
 
-const SingleProject = ({ pathName, title, subtitle, paragraph, imageLeft, image1, image2 }) => {
+const SingleProject = ({
+  url,
+  title,
+  subtitle,
+  paragraph,
+  imageLeft,
+  image1,
+  image2,
+}) => {
   return (
     <Slide triggerOnce>
-    <Container normal={imageLeft}>
-      <LeftContainer>
-        <h5>{subtitle}</h5>
-        <h2>{title}</h2>
-        <p>{paragraph}</p>
-        <Link className="Link" to={`/project/${pathName}`}>view this project</Link>
-      </LeftContainer>
-     
-      <RightContainer>
-        <img alt="desktop design" className="desktopImg" src={image1} />
-        <img alt="mobile design" className="mobileImg"  src={image2} />
-      </RightContainer>
-    </Container>
+      <Container normal={imageLeft}>
+        <LeftContainer>
+          <h5>{subtitle}</h5>
+          <h2>{title}</h2>
+          <p>{paragraph}</p>
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            view the design
+          </a>
+       
+        </LeftContainer>
+
+        <RightContainer>
+          <img alt="desktop design" className="desktopImg" src={image1} />
+          <img alt="mobile design" className="mobileImg" src={image2} />
+        </RightContainer>
+      </Container>
     </Slide>
-    
   );
 };
 
 const Container = styled.div`
   display: flex;
   align-items: center;
-  margin-top:100px;
+  margin-top: 100px;
   flex-direction: column;
 
   @media screen and (min-width: 992px) {
-  flex-direction: ${props => props.normal ? 'row' : 'row-reverse'}
-    }
+    flex-direction: ${(props) => (props.normal ? "row" : "row-reverse")};
+  }
 `;
 
 const LeftContainer = styled.div`
@@ -67,7 +76,7 @@ align-items:center;
       width: 60%;
       text-align:center;
     }
-    .Link{
+    a{
       width:110px;
       height: 30px;
       font-size: 12px;
@@ -131,7 +140,7 @@ align-items:center;
         font-size: 22px; 
         text-align:left;
       }
-      .Link{
+      a{
         width:110px;
         height: 30px;
          font-size: 12px;
@@ -218,10 +227,5 @@ const RightContainer = styled.div`
   }
  
 `;
-
-
-
-
-
 
 export default SingleProject;

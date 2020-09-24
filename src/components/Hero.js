@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Fade } from 'react-awesome-reveal';
 
 const Hero = () => {
-  console.log('hero rendered');
   return (
     <Wrapper>
      

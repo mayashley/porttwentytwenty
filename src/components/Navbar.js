@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false);
-  console.log(isOpen);
+
   return (
     <Wrapper>
       <nav className="navBar">

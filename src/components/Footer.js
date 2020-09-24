@@ -3,7 +3,6 @@ import styled from "styled-components";
 import SocialIcons from "../constants/SocialIcons";
 
 const Footer = () => {
-  console.log('Footer rendered');
 
   return (
     <Wrapper>

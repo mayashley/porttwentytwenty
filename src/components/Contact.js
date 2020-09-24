@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
-  console.log("Contact rendered");
 
   return (
     <Wrapper>

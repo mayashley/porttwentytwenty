@@ -6,10 +6,12 @@ class Projects extends Component {
   render() {
     return (
       <div id="projects">
-        {ProjectsList.map((item, index) => 
+        {ProjectsList.map((item, index) => (
           <SingleProject
             key={index}
-           url={item.url}
+            design={item.design}
+            code={item.code}
+            live={item.live}
             title={item.title}
             subtitle={item.subtitle}
             paragraph={item.paragraph}
@@ -17,7 +19,7 @@ class Projects extends Component {
             image1={item.image1}
             image2={item.image2}
           />
-        )}
+        ))}
       </div>
     );
   }

@@ -3,7 +3,9 @@ import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
 
 const SingleProject = ({
-  url,
+  design,
+  live,
+  code,
   title,
   subtitle,
   paragraph,
@@ -18,10 +20,21 @@ const SingleProject = ({
           <h5>{subtitle}</h5>
           <h2>{title}</h2>
           <p>{paragraph}</p>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            view the design
-          </a>
-       
+          {design && (
+            <a href={design} target="_blank" rel="noopener noreferrer">
+              view the design
+            </a>
+          )}
+          {code && (
+            <a href={code} target="_blank" rel="noopener noreferrer">
+              view the code
+            </a>
+          )}
+          {live && (
+            <a href={live} target="_blank" rel="noopener noreferrer">
+              view it live
+            </a>
+          )}
         </LeftContainer>
 
         <RightContainer>

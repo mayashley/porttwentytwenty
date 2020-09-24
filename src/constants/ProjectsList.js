@@ -18,7 +18,7 @@ const iphone6 = require("../assets/iphone6.png");
 
 export default [
     {
-        url: "https://www.figma.com/file/H1Flsz1EpXWCmCJ2Y4zuWA/Roam-HR?node-id=0%3A1",
+        design: "https://www.figma.com/file/H1Flsz1EpXWCmCJ2Y4zuWA/Roam-HR?node-id=0%3A1",
         title: "Roam HR",
         subtitle: "latest work",
         paragraph: "Responsive design completed for a Fin Tech start up located in Columbus,OH.",
@@ -28,7 +28,7 @@ export default [
        
     },
     {
-        url:"https://www.figma.com/file/auBXAhBh3UyLQ6ThH1ZNLA/Untitled",
+        design:"https://www.figma.com/file/auBXAhBh3UyLQ6ThH1ZNLA/Untitled",
         title: "Alpine Consulting",
         subtitle: "latest work",
         paragraph: "Design created for a web design and development consulting company in Columbus,OH. ",
@@ -39,7 +39,7 @@ export default [
 
     },
     {
-       url:"https://www.figma.com/file/XpQ8nK75zaspmAQ5B20C9O/Chat-app-design-2020?node-id=107%3A2",
+       design:"https://www.figma.com/file/XpQ8nK75zaspmAQ5B20C9O/Chat-app-design-2020?node-id=107%3A2",
         title: "Chat ME",
         subtitle: "latest work",
         paragraph: "Concept design for a chat app.",
@@ -49,7 +49,7 @@ export default [
        
     },
     {
-      url:"https://www.figma.com/file/UNFD0PneJYQxuwAXkGWZrl/Untitled?node-id=0%3A1",
+      design:"https://www.figma.com/file/UNFD0PneJYQxuwAXkGWZrl/Untitled?node-id=0%3A1",
         title: "Winston Hall",
         subtitle: "latest work",
         paragraph: "Portfolio designed for a web developer in Westunion,OH.",
@@ -59,7 +59,9 @@ export default [
      
     },
     {
-        
+       
+      live: "https://southernohioinflatables.com/",
+        code: " ",
         title: "Southern Ohio Inflatables",
         subtitle: "latest work",
         paragraph: "Designed and coded for a party rental company in Southern,OH. ",
@@ -70,7 +72,9 @@ export default [
 
     },
     {
-       
+        
+        live: "https://landscape-site.netlify.app/",
+          code: " ",
         title: "Southern Ohio Landscaping",
         subtitle: "latest work",
         paragraph: "Designed and coded for a small landscaping company. ",

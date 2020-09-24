@@ -3,6 +3,8 @@ import styled from "styled-components";
 import SocialIcons from "../constants/SocialIcons";
 
 const Footer = () => {
+  console.log('Footer rendered');
+
   return (
     <Wrapper>
       <div className="secondaryWrapper">
@@ -12,15 +14,17 @@ const Footer = () => {
           </h3>
           <p>©2020 All Rights Reserved.</p>
         </div>
-        <div className='socialIconWrapper'>
-      {SocialIcons.map((item, index) => {
-        return <div key={index} className='iconWrapper'>
-           <a href={item.url} target="_blank" rel="noopener noreferrer">
-          {item.icon} 
-         </a>
-        </div>;
-      })}
-    </div>
+        <div className="socialIconWrapper">
+          {SocialIcons.map((item, index) => {
+            return (
+              <div key={index} className="iconWrapper">
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  {item.icon}
+                </a>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </Wrapper>
   );

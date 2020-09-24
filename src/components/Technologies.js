@@ -1,28 +1,31 @@
 import React from "react";
 import Icons from "../constants/Icons";
 import styled from "styled-components";
-import { Fade} from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Technologies = () => {
+  console.log('Technologies rendered');
+
   return (
     // <Slide triggerOnce>
     <Wrapper>
-    <div className='wrapperSecondary'>
-      {Icons.map((item, index) => {
-        return <div key={index} className='iconWrapper'>
-          <Fade delay={500}>
-            <h3>{item.icon}</h3>
-            {/* <p>{item.title}</p> */}
-            </Fade>
-        </div>;
-      })}
-    </div>
+      <div className="wrapperSecondary">
+        {Icons.map((item, index) => {
+          return (
+            <div key={index} className="iconWrapper">
+              <Fade delay={500}>
+                <h3>{item.icon}</h3>
+                {/* <p>{item.title}</p> */}
+              </Fade>
+            </div>
+          );
+        })}
+      </div>
     </Wrapper>
     // </Slide>
   );
 };
 export default Technologies;
-
 
 const Wrapper = styled.div`
 .wrapperSecondary{
@@ -49,4 +52,4 @@ const Wrapper = styled.div`
       font-size: 30px;
     }
 }
-`
+`;

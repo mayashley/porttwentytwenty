@@ -1,5 +1,4 @@
 // import React from 'react'
-// import { useParams } from "react-router-dom";
 // import ProjectsList from "../constants/ProjectsList";
 // import styled from "styled-components";
 // import "../App.css";

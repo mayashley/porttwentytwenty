@@ -4,6 +4,8 @@ import ProjectsList from "../constants/ProjectsList";
 
 class Projects extends Component {
   render() {
+    console.log("Projects rendered");
+
     return (
       <div id="projects">
         {ProjectsList.map((item, index) => (

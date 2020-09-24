@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Fade} from "react-awesome-reveal";
 
 const Contact = () => {
     return (
       <Wrapper>
       <section>
+      <Fade delay={600}>
         <h2>Let's Talk</h2>
+        </Fade>
         <div id="contact">
           <form 
            action="https://formspree.io/mvorwnwo"
@@ -71,6 +74,7 @@ const Contact = () => {
         </div>
       </section>
       </Wrapper>
+      
     )
   }
 

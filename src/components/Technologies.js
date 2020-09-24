@@ -1,22 +1,24 @@
 import React from "react";
 import Icons from "../constants/Icons";
 import styled from "styled-components";
-import { Slide } from "react-awesome-reveal";
+import { Fade} from "react-awesome-reveal";
 
 const Technologies = () => {
   return (
-    <Slide triggerOnce>
+    // <Slide triggerOnce>
     <Wrapper>
     <div className='wrapperSecondary'>
       {Icons.map((item, index) => {
         return <div key={index} className='iconWrapper'>
+          <Fade delay={500}>
             <h3>{item.icon}</h3>
             {/* <p>{item.title}</p> */}
+            </Fade>
         </div>;
       })}
     </div>
     </Wrapper>
-    </Slide>
+    // </Slide>
   );
 };
 export default Technologies;

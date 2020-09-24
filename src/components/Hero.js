@@ -1,17 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import { Slide } from 'react-awesome-reveal';
+import { Slide, Fade } from 'react-awesome-reveal';
 
 const Hero = () => {
   return (
     <Wrapper>
      
       <div className="heroWrapper">
+      <Fade delay={800}>
         <div className="secondaryWrapper">
-          <Slide triggerOnce>
+          {/* <Slide triggerOnce> */}
           <h1>
-            Hi, I'm Ashley, <strong>Web Designer</strong> and
-            <strong> Front-End Developer</strong>.
+             Hi, I'm Ashley, <strong>Web Designer</strong> and
+            <strong> Front-End Developer.</strong>
           </h1>
           <h3>
             I design and build beautiful websites for businesses. If you need a modern and powerful website, send me an
@@ -21,8 +22,9 @@ const Hero = () => {
           <div className="navLinks">
           <a href="#projects">see my work</a>
           </div>
-            </Slide>
+            {/* </Slide> */}
         </div>
+        </Fade>
       </div>
     </Wrapper>
   );

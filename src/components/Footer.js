@@ -12,6 +12,15 @@ const Footer = () => {
           </h3>
           <p>©2020 All Rights Reserved.</p>
         </div>
+        <div className='socialIconWrapper'>
+      {SocialIcons.map((item, index) => {
+        return <div key={index} className='iconWrapper'>
+           <a href={item.url} target="_blank" rel="noopener noreferrer">
+          {item.icon} 
+         </a>
+        </div>;
+      })}
+    </div>
       </div>
     </Wrapper>
   );
@@ -48,18 +57,32 @@ h3 {
     // align-items:center;
     margin: 0 0 0 30px;
   }
+  .socialIconWrapper{
+    // border:1px solid red;
+    margin: 0 30px;
+    display:flex;
+  align-items:center;
+  }
+  .iconWrapper{
+    // border: 1px solid green;
+    margin: 0 10px;
+  }
+  .iconWrapper a{
+    text-decoration:none;
+    color: var(--white);
+    font-size: 18px;
+  }
  
 
   @media (min-width: 768px){
     .wrap{
       width:96%;
     }
-    .iconWrapper{
-      font-size: 18px;
-      width:4%;
-    }
     h3 {
       font-size: 26px;
+    }
+    .iconWrapper a{
+      font-size: 20px;
     }
   }
 `;

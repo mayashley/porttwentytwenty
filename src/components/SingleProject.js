@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Slide } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const SingleProject = ({
   design,
@@ -14,16 +14,17 @@ const SingleProject = ({
   image2,
 }) => {
   return (
-    <Slide triggerOnce>
-      <Container normal={imageLeft}>
-        <LeftContainer>
-          <h5>{subtitle}</h5>
-          <h2>{title}</h2>
-          <p>{paragraph}</p>
-          <div className="linkRow">
+    <Fade delay={800}>
+    <Container normal={imageLeft}>
+      <LeftContainer>
+        {/* <Slide triggerOnce direction="right"> */}
+        <h5>{subtitle}</h5>
+        <h2>{title}</h2>
+        <p>{paragraph}</p>
+        <div className="linkRow">
           {design && (
             <a href={design} target="_blank" rel="noopener noreferrer">
-             see the design
+              see the design
             </a>
           )}
           {code && (
@@ -33,18 +34,19 @@ const SingleProject = ({
           )}
           {live && (
             <a href={live} target="_blank" rel="noopener noreferrer">
-             see it live
+              see it live
             </a>
           )}
-          </div>
-        </LeftContainer>
+        </div>
+        {/* </Slide> */}
+      </LeftContainer>
 
-        <RightContainer>
-          <img alt="desktop design" className="desktopImg" src={image1} />
-          <img alt="mobile design" className="mobileImg" src={image2} />
-        </RightContainer>
-      </Container>
-    </Slide>
+      <RightContainer>
+        <img alt="desktop design" className="desktopImg" src={image1} />
+        <img alt="mobile design" className="mobileImg" src={image2} />
+      </RightContainer>
+    </Container>
+    </Fade>
   );
 };
 

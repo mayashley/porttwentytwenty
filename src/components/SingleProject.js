@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade} from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const SingleProject = ({
   design,
@@ -15,37 +15,37 @@ const SingleProject = ({
 }) => {
   return (
     <Fade delay={300}>
-    <Container normal={imageLeft}>
-      <LeftContainer>
-        {/* <Slide triggerOnce direction="right"> */}
-        <h5>{subtitle}</h5>
-        <h2>{title}</h2>
-        <p>{paragraph}</p>
-        <div className="linkRow">
-          {design && (
-            <a href={design} target="_blank" rel="noopener noreferrer">
-              see the design
-            </a>
-          )}
-          {code && (
-            <a href={code} target="_blank" rel="noopener noreferrer">
-              see the code
-            </a>
-          )}
-          {live && (
-            <a href={live} target="_blank" rel="noopener noreferrer">
-              see it live
-            </a>
-          )}
-        </div>
-        {/* </Slide> */}
-      </LeftContainer>
+      <Container normal={imageLeft}>
+        <LeftContainer>
+          {/* <Slide triggerOnce direction="right"> */}
+          <h5>{subtitle}</h5>
+          <h2>{title}</h2>
+          <p>{paragraph}</p>
+          <div className="linkRow">
+            {design && (
+              <a href={design} target="_blank" rel="noopener noreferrer">
+                see the design
+              </a>
+            )}
+            {code && (
+              <a href={code} target="_blank" rel="noopener noreferrer">
+                see the code
+              </a>
+            )}
+            {live && (
+              <a href={live} target="_blank" rel="noopener noreferrer">
+                see it live
+              </a>
+            )}
+          </div>
+          {/* </Slide> */}
+        </LeftContainer>
 
-      <RightContainer>
-        <img alt="desktop design" className="desktopImg" src={image1} />
-        <img alt="mobile design" className="mobileImg" src={image2} />
-      </RightContainer>
-    </Container>
+        <RightContainer>
+          <img alt="desktop design" className="desktopImg" src={image1} />
+          <img alt="mobile design" className="mobileImg" src={image2} />
+        </RightContainer>
+      </Container>
     </Fade>
   );
 };

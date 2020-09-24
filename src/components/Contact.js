@@ -6,7 +6,7 @@ const Contact = () => {
     return (
       <Wrapper>
       <section>
-      <Fade delay={600}>
+      <Fade delay={300}>
         <h2>Let's Talk</h2>
         </Fade>
         <div id="contact">

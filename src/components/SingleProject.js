@@ -14,7 +14,7 @@ const SingleProject = ({
   image2,
 }) => {
   return (
-    <Fade delay={800}>
+    <Fade delay={300}>
     <Container normal={imageLeft}>
       <LeftContainer>
         {/* <Slide triggerOnce direction="right"> */}

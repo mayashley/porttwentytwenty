@@ -85,6 +85,8 @@ const Wrapper = styled.nav`
     align-items: center;
     font-weight: 100;
     overflow: hidden;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s
     // border: 1px solid red;
   }
   .navLinks a:hover {

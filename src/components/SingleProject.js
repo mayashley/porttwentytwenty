@@ -20,21 +20,23 @@ const SingleProject = ({
           <h5>{subtitle}</h5>
           <h2>{title}</h2>
           <p>{paragraph}</p>
+          <div className="linkRow">
           {design && (
             <a href={design} target="_blank" rel="noopener noreferrer">
-              view the design
+             see the design
             </a>
           )}
           {code && (
             <a href={code} target="_blank" rel="noopener noreferrer">
-              view the code
+              see the code
             </a>
           )}
           {live && (
             <a href={live} target="_blank" rel="noopener noreferrer">
-              view it live
+             see it live
             </a>
           )}
+          </div>
         </LeftContainer>
 
         <RightContainer>
@@ -94,7 +96,7 @@ align-items:center;
       height: 30px;
       font-size: 12px;
       text-decoration: none;
-        margin: 20px 0;
+        margin: 10px 0;
         color: var(--almostBlack);
         background-image: linear-gradient(to right, rgba(143, 215, 87, 1), rgba(58, 128, 4, 1));
         border-radius:4px;
@@ -133,6 +135,13 @@ align-items:center;
       width: 60%;
       text-align:center;
     }
+   .linkRow{
+    //  border: 1px solid red;
+     display:flex;
+   }
+a{
+  margin: 20px 10px;
+}
   }
       }
 

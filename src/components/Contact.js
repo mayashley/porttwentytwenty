@@ -115,6 +115,7 @@ section{
     border-radius:4px;
     border: none;
     margin: 10px 0;
+    cursor:pointer;
 }
 @media (min-width: 768px){
   .button {

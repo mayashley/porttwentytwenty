@@ -61,8 +61,8 @@ export default [
     {
        
       live: "https://southernohioinflatables.com/",
-        code: " ",
-        title: "Southern Ohio Inflatables",
+        code: "https://github.com/mayashley/inflatable-app",
+        title: "S.O. Inflatables",
         subtitle: "latest work",
         paragraph: "Designed and coded for a party rental company in Southern,OH. ",
         imageLeft: true,
@@ -74,8 +74,8 @@ export default [
     {
         
         live: "https://landscape-site.netlify.app/",
-          code: " ",
-        title: "Southern Ohio Landscaping",
+          code: "https://github.com/mayashley/landscape-site",
+        title: "S.O. Landscaping",
         subtitle: "latest work",
         paragraph: "Designed and coded for a small landscaping company. ",
         imageLeft: false,

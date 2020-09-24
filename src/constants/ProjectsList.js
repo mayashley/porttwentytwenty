@@ -1,4 +1,4 @@
-import { SiAlpinelinux } from 'react-icons/si';
+
 
 const device1 = require ('../assets/device1.png');
 const device2 = require("../assets/device2.png");

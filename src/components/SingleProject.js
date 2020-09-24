@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade} from "react-awesome-reveal";
 
 const SingleProject = ({
   design,

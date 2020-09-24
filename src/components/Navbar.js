@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaAlignRight } from "react-icons/fa";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import Links from "../constants/Links";
 
 const Navbar = () => {

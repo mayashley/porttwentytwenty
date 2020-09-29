@@ -12,6 +12,7 @@ const SingleProject = ({
   imageLeft,
   image1,
   image2,
+  image3,
 }) => {
   return (
     <Fade delay={300}>
@@ -42,8 +43,8 @@ const SingleProject = ({
         </LeftContainer>
 
         <RightContainer>
-          <img alt="desktop design" className="desktopImg" src={image1} />
-          <img alt="mobile design" className="mobileImg" src={image2} />
+          <img alt="desktop design" className="desktopImg" src={image3} />
+          {/* <img alt="mobile design" className="mobileImg" src={image2} /> */}
         </RightContainer>
       </Container>
     </Fade>

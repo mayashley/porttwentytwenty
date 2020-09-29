@@ -12,6 +12,13 @@ const iphone3 = require("../assets/iphone3.png");
 const iphone4 = require("../assets/iphone4.png");
 const iphone5 = require("../assets/iphone5.png");
 const iphone6 = require("../assets/iphone6.png");
+const mash1 = require("../assets/3 Device Mashup-roam.png");
+const mash2 = require("../assets/3 Device Mashup-bills.png");
+const mash3 = require("../assets/3 Device Mashup.png");
+const mash4 = require("../assets/3 Device Mashup-winston.png");
+const mash5 = require("../assets/3 Device Mashup-sol.png");
+const mash6 = require("../assets/3 Device Mashup-soi.png");
+const mash7 = require("../assets/3 Device Mashup-alpine.png");
 
 
 
@@ -21,41 +28,57 @@ export default [
         design: "https://www.figma.com/file/H1Flsz1EpXWCmCJ2Y4zuWA/Roam-HR?node-id=0%3A1",
         title: "Roam HR",
         subtitle: "latest work",
-        paragraph: "Responsive design completed for a Fin Tech start up located in Columbus,OH.",
+        paragraph: "Responsive design completed in Figma for a Fin Tech start up located in Columbus,OH.",
         imageLeft: true,
         image1: device1,
         image2: iphone1,
+        image3: mash1,
        
     },
+    {
+      live: "https://beaches-travel.netlify.app/",
+      code:"https://github.com/mayashley/beaches",
+      title: "Beaches",
+      subtitle: "latest work",
+      paragraph: "Responsive design concept designed in Figma, coded in Gatsby with GraphQL queries, and Contentful headless cms.",
+      imageLeft: false,
+      image1: device1,
+      image2: iphone1,
+      image3: mash3,
+     
+  },
     {
         design:"https://www.figma.com/file/auBXAhBh3UyLQ6ThH1ZNLA/Untitled",
         title: "Alpine Consulting",
         subtitle: "latest work",
-        paragraph: "Design created for a web design and development consulting company in Columbus,OH. ",
-        imageLeft: false,
+        paragraph: "Design created in Figma for a web design and development consulting company in Columbus,OH. ",
+        imageLeft: true,
         image1: device3,
         image2: iphone3,
+        image3: mash7,
        
 
     },
     {
-       design:"https://www.figma.com/file/XpQ8nK75zaspmAQ5B20C9O/Chat-app-design-2020?node-id=107%3A2",
-        title: "Chat ME",
+       design:"https://www.figma.com/file/WN9v0dpuFkuOG2KeDv5s7K/Untitled?node-id=0%3A1",
+        title: "Bill's Auto",
         subtitle: "latest work",
-        paragraph: "Concept design for a chat app.",
-        imageLeft: true,
+        paragraph: "Designed in Figma for a local automotive business.",
+        imageLeft: false,
         image1: device2,
         image2:iphone2,
+        image3: mash2,
        
     },
     {
       design:"https://www.figma.com/file/UNFD0PneJYQxuwAXkGWZrl/Untitled?node-id=0%3A1",
         title: "Winston Hall",
         subtitle: "latest work",
-        paragraph: "Portfolio designed for a web developer in Westunion,OH.",
-        imageLeft: false,
+        paragraph: "Portfolio designed in Figma for a local web developer.",
+        imageLeft: true,
         image1: device4,
         image2:iphone4,
+        image3: mash4,
      
     },
     {
@@ -64,10 +87,11 @@ export default [
         code: "https://github.com/mayashley/inflatable-app",
         title: "S.O. Inflatables",
         subtitle: "latest work",
-        paragraph: "Designed and coded for a party rental company in Southern,OH. ",
-        imageLeft: true,
+        paragraph: "Designed with InDesign for a local party rental company. Coded useing React, Redux, React router. ",
+        imageLeft: false,
         image1: device6,
         image2: iphone6,
+        image3: mash6,
         
 
     },
@@ -77,10 +101,11 @@ export default [
           code: "https://github.com/mayashley/landscape-site",
         title: "S.O. Landscaping",
         subtitle: "latest work",
-        paragraph: "Designed and coded for a small landscaping company. ",
-        imageLeft: false,
+        paragraph: "Designed with InDesign for a local landscaping company. Coded useing Gatsby, Contenful headless cms, and GraphQL. ",
+        imageLeft: true,
         image1: device5,
         image2: iphone5,
+        image3: mash5,
     
 
     },

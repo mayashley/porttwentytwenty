@@ -52,6 +52,7 @@ const SingleProject = ({
 };
 
 const Container = styled.div`
+// border: 1px solid blue;
   display: flex;
   align-items: center;
   margin-top: 100px;
@@ -59,6 +60,7 @@ const Container = styled.div`
 
   @media screen and (min-width: 992px) {
     flex-direction: ${(props) => (props.normal ? "row" : "row-reverse")};
+    margin-top: 300px;
   }
 `;
 
@@ -197,7 +199,7 @@ const RightContainer = styled.div`
   margin: 0;
 
   .desktopImg{
-    max-width:75%;
+    max-width:100%;
    
   }
   .mobileImg{
@@ -218,6 +220,11 @@ const RightContainer = styled.div`
     @media screen and (min-width: 839px){
       .mobileImg{
         margin: 110px -140px; 
+      }
+    }
+    @media screen and(min-width:768px){
+      .desktopImg{
+        max-width:75%;
       }
     }
   @media screen and (min-width: 992px){

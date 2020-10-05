@@ -19,6 +19,7 @@ const mash4 = require("../assets/3 Device Mashup-winston.png");
 const mash5 = require("../assets/3 Device Mashup-sol.png");
 const mash6 = require("../assets/3 Device Mashup-soi.png");
 const mash7 = require("../assets/3 Device Mashup-alpine.png");
+const mash8 = require("../assets/3 Device Mashupupnorth.png");
 
 
 
@@ -109,4 +110,16 @@ export default [
     
 
     },
+    {
+      design:"https://www.figma.com/file/GiwP0RbFWqgzU6sVfUkkzq/Untitled?node-id=0%3A1",
+      title: "Up North Clothing",
+      subtitle: "latest work",
+      paragraph: "This design is created in Figma for  a concept clothing brand. This work is currently in progress and is not a finished product. ",
+      imageLeft: false,
+      image1: device5,
+      image2: iphone5,
+      image3: mash8,
+  
+
+  },
 ]

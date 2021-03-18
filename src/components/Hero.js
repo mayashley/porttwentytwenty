@@ -67,8 +67,8 @@ height: -moz-calc(100vh - 50px); /* firefox */
     max-width: 700px;
   }
   a{
-    width:120px;
-    height: 34px;
+    width:180px;
+    height: 50px;
     margin: 20px 0;
     color: var(--almostBlack);
     background-image: linear-gradient(to right, rgba(143, 215, 87, 1), rgba(58, 128, 4, 1));
@@ -101,8 +101,8 @@ height: -moz-calc(100vh - 50px); /* firefox */
         max-width: 600px;
       }
      a{
-        width:110px;
-        height: 30px;
+        width:140px;
+        height: 40px;
       }
     }
 `;

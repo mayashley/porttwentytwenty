@@ -99,7 +99,7 @@ align-items:center;
     a{
       width:110px;
       height: 30px;
-      font-size: 12px;
+      font-size: 20px;
       text-decoration: none;
         margin: 10px 0;
         color: var(--almostBlack);
@@ -168,9 +168,9 @@ a{
         text-align:left;
       }
       a{
-        width:110px;
-        height: 30px;
-         font-size: 12px;
+        width:180px;
+        height: 50px;
+         font-size: 20px;
       text-decoration: none;
       }
     }

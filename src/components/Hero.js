@@ -33,7 +33,7 @@ const Hero = () => {
 const Wrapper = styled.section`
   .heroWrapper {
     // border: 1px solid blue;
-    background-color: var(--almostBlack);
+    background-color: var(--red);
     width: 100%;
     height: -o-calc(100vh - 50px); /* opera */
 height: -webkit-calc(100vh - 50px); /* google, safari */
@@ -69,9 +69,11 @@ height: -moz-calc(100vh - 50px); /* firefox */
   a{
     width:180px;
     height: 50px;
+    font-size: 20px;
     margin: 20px 0;
-    color: var(--almostBlack);
-    background-image: linear-gradient(to right, rgba(143, 215, 87, 1), rgba(58, 128, 4, 1));
+    color: var(--white);
+    // background-image: linear-gradient(to right, rgba(143, 215, 87, 1), rgba(58, 128, 4, 1));
+    background-color: var(--secondGrey);
     border-radius:4px;
     border: none;
     display:flex;

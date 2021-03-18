@@ -4,7 +4,9 @@
   --lightGreen: rgba(143, 215, 87, 1);
   --white: rgba(243, 243, 243, 1);
   --almostBlack: rgba(21, 21, 21, 1);
-  --grey: rgba(21, 21, 21, 0.47);
+  --grey: #EAE9F0;
+  --red: #70180A;
+  --secondGrey: #B4B0B8;
 }
 
 *{

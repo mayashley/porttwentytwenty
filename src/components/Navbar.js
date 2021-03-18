@@ -34,7 +34,7 @@ const Wrapper = styled.nav`
     // border: 1px solid red;
     width: 100%;
     padding:  0 50px;
-    background-color: var(--almostBlack);
+    background-color: var(--secondGrey);
     z-index: 10;
     
 }
@@ -46,11 +46,11 @@ const Wrapper = styled.nav`
     align-items: center;
 }
   h3 {
-    color: var(--white);
+    color: var(--red);
     font-weight: 300;
   }
   h3 span {
-    color: var(--lightGreen);
+    color: var(--secondGrey);
     font-weight: 100;
   }
 
